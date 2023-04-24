@@ -1,6 +1,9 @@
 # MMCU
 MEASURING MASSIVE MULTITASK CHINESE UNDERSTANDING
 
+Please send us an email to apply for free dataset download: order@besteasy.com
+You may need to clarify your identity (Professor, College Students, NLP researcher/engineer, etc.)
+
 # Usage
 
 ## zero-shot test for chatgpt
