@@ -3,8 +3,7 @@ MEASURING MASSIVE MULTITASK CHINESE UNDERSTANDING
 
 # Usage
 
-zero-shot test for chatgpt
-
+## zero-shot test for chatgpt
 python FelixTestChatGPT.py \
  --ntrain 0  \
  --data_dir MMCU_dataset_path  \
