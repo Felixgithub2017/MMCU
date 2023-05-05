@@ -8,55 +8,72 @@ You may need to clarify your identity (Professor, College Students, NLP research
 # Usage
 
 --ntrain 0: do not provide examples
+
 --ntrain 5: provide five examples
 
 ## zero-shot test for chatgpt
+```python
 python TestChatGPT.py \
  --ntrain 0  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+```
 
 ## few-shot test for chatgpt
+```python
 python TestChatGPT.py \
  --ntrain 5  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+```
 
 ## zero-shot test for bloomz
+```python
 python TestBloomz.py \
  --ntrain 0  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+ ```
  
 ## few-shot test for bloomz
+```python
 python TestBloomz.py \
  --ntrain 5  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+ ```
 
 ## zero-shot test for chatglm
+```python
 python TestChatGLM.py \
  --ntrain 0  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+ ```
 
 ## few-shot test for chatglm
+```python
 python TestChatGLM.py \
  --ntrain 5  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+ ```
 
 ## zero-shot test for MOSS
+```python
 python TestMOSS.py \
  --ntrain 0  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+ ```
  
 ## few-shot test for MOSS
+```python
 python TestMOSS.py \
  --ntrain 5  \
  --data_dir MMCU_dataset_path  \
  --save_dir path_for_test_results
+ ```
 
 # Cite
 If you find the code and testset are useful in your research, please consider citing
