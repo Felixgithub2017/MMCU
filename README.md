@@ -11,7 +11,7 @@ You may need to clarify your identity (Professor, College Students, NLP research
 
 --ntrain 5: provide five examples
 
-## zero-shot test for chatgpt
+zero-shot test for chatgpt
 ```python
 python TestChatGPT.py \
  --ntrain 0  \
@@ -19,7 +19,7 @@ python TestChatGPT.py \
  --save_dir path_for_test_results
 ```
 
-## few-shot test for chatgpt
+few-shot test for chatgpt
 ```python
 python TestChatGPT.py \
  --ntrain 5  \
@@ -27,7 +27,7 @@ python TestChatGPT.py \
  --save_dir path_for_test_results
 ```
 
-## zero-shot test for bloomz
+zero-shot test for bloomz
 ```python
 python TestBloomz.py \
  --ntrain 0  \
@@ -35,7 +35,7 @@ python TestBloomz.py \
  --save_dir path_for_test_results
  ```
  
-## few-shot test for bloomz
+few-shot test for bloomz
 ```python
 python TestBloomz.py \
  --ntrain 5  \
@@ -43,7 +43,7 @@ python TestBloomz.py \
  --save_dir path_for_test_results
  ```
 
-## zero-shot test for chatglm
+zero-shot test for chatglm
 ```python
 python TestChatGLM.py \
  --ntrain 0  \
@@ -51,7 +51,7 @@ python TestChatGLM.py \
  --save_dir path_for_test_results
  ```
 
-## few-shot test for chatglm
+few-shot test for chatglm
 ```python
 python TestChatGLM.py \
  --ntrain 5  \
@@ -59,7 +59,7 @@ python TestChatGLM.py \
  --save_dir path_for_test_results
  ```
 
-## zero-shot test for MOSS
+zero-shot test for MOSS
 ```python
 python TestMOSS.py \
  --ntrain 0  \
@@ -67,7 +67,7 @@ python TestMOSS.py \
  --save_dir path_for_test_results
  ```
  
-## few-shot test for MOSS
+few-shot test for MOSS
 ```python
 python TestMOSS.py \
  --ntrain 5  \
