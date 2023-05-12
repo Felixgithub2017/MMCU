@@ -14,7 +14,7 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 2023.5.12<br>
 1.修正模型预测答案匹配方法，更好地抽取多选题预测答案<br>
 2.将某些题目正确答案中的 ＡＢＣＤ 修正为 A B C D<br>
-3.评测结果文件更加直观，采用以下形式记录，第一列为模型预测答案，第二列为标准，第三列记录是否答对<br>
+3.评测结果文件更加直观，采用以下形式记录，第一列为模型预测答案，第二列为标准答案，第三列记录是否答对<br>
 
 ABD|||ABCD|||False<br>
 C|||BD|||False<br>
