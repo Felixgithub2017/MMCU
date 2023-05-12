@@ -10,10 +10,10 @@ from transformers import  AutoTokenizer, BloomForCausalLM, GenerationConfig
 
 tokenizer = AutoTokenizer.from_pretrained('bigscience/bloom')
 
-BASE_MODEL = "/media/user/80EADB63EADB53CE/bloom_lora_model/bloomz_560m"
-#BASE_MODEL = "/media/user/80EADB63EADB53CE/bloom_lora_model/bloomz_1b1"
-#BASE_MODEL = "/media/user/80EADB63EADB53CE/bloom_lora_model/bloomz_3b"
-#BASE_MODEL = "/media/user/80EADB63EADB53CE/bloom_lora_model/bloomz_7b1_mt"
+BASE_MODEL = "bloomz_560m"
+#BASE_MODEL = "bloomz_1b1"
+#BASE_MODEL = "bloomz_3b"
+#BASE_MODEL = "bloomz_7b1_mt"
 
 device = "cuda"
 
