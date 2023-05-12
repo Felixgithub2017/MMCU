@@ -3,6 +3,7 @@ import os
 import numpy as np
 import pandas as pd
 import time
+import re
 
 import torch
 from transformers import  AutoTokenizer, BloomForCausalLM, GenerationConfig
@@ -20,19 +21,20 @@ model = BloomForCausalLM.from_pretrained(
         BASE_MODEL,
         #load_in_8bit=True,
         torch_dtype=torch.float16,
-        device_map={'': 1}, # original  device_map="auto"
+        device_map={'': 0}, # original  device_map="auto"
     )
 
 model.eval()
 
 choices = ["A", "B", "C", "D"]
 
-def softmax(x):
-    z = x - max(x)
-    numerator = np.exp(z)
-    denominator = np.sum(numerator)
-    softmax = numerator/denominator
-    return softmax
+def find_valid_substrings(s):
+    # 匹配长度为1到4的、不包含重复字符的子串
+    pattern = r'[ABCD]{1,4}'
+    substrings = re.findall(pattern, s)
+    # 过滤出不包含重复字符的子串
+    valid_substrings = [substring for substring in substrings if len(substring) == len(set(substring))]
+    return valid_substrings
 
 def format_subject(subject):
     l = subject.split("_")
@@ -47,7 +49,7 @@ def format_example(df, idx, include_answer=True):
     for j in range(k):
         #prompt += "\n{}. {}".format(choices[j], df.iloc[idx, j+1])
         try:
-            prompt += "\n{}. {}".format(choices[j], df.iloc[idx, j+1].replace("A、", "").replace("B、", "").replace("C、", "").replace("D、", "").replace("A.", "").replace("B.", "").replace("C.", "").replace("D.", "").replace("A", "").replace("B", "").replace("C", "").replace("D", "").replace("Ａ、", "").replace("Ｂ、", "").replace("Ｃ、", "").replace("Ｄ、", "").strip())
+            prompt += "\n{}. {}".format(choices[j], df.iloc[idx, j+1].replace(" ．", "").replace("A、", "").replace("B、", "").replace("C、", "").replace("D、", "").replace("A.", "").replace("B.", "").replace("C.", "").replace("D.", "").replace("A", "").replace("B", "").replace("C", "").replace("D", "").replace("Ａ、", "").replace("Ｂ、", "").replace("Ｃ、", "").replace("Ｄ、", "").strip())
         except Exception as e:
             prompt += "\n{}. {}".format(choices[j], df.iloc[idx, j+1])
     #prompt += "\nAnswer:"
@@ -114,7 +116,7 @@ def writetext_to_file(file, contents):
         f.write(contents)
 
 def eval(args, subject, dev_df, test_df):
-    logfile = "bloomztestlogfile"
+    logfile = "bloomztestlogfile0512"
     cors = []
     #labels = []
     preds = []
@@ -132,6 +134,8 @@ def eval(args, subject, dev_df, test_df):
 
         try:        
             label = test_df.iloc[i, test_df.shape[1]-1]
+            # A B C D 特殊处理  ＡＢＣＤ
+            label = label.replace(" ", "").replace("Ａ", "A").replace("Ｂ", "B").replace("Ｃ", "C").replace("Ｄ", "D")
             print("正确答案:", label)
             with open(logfile, 'a', encoding='utf8') as f:
                 f.write("正确答案:"+label+"\n")
@@ -144,8 +148,9 @@ def eval(args, subject, dev_df, test_df):
                 time.sleep(1)
                 pred = plain_chat(prompt)
                 pred = pred.replace("、", "").replace(".", "").replace(",", "").replace(";", "").replace("，", "")
+                # 识别答案pattern
+                pred = find_valid_substrings(pred)[0]
                 print("模型预测答案:", pred)
-                preds.append(pred)
                 with open(logfile, 'a', encoding='utf8') as f:
                     f.write("模型预测答案:"+pred+"\n")
                 break
@@ -156,30 +161,23 @@ def eval(args, subject, dev_df, test_df):
                 continue
 
         try:
-            #cor = pred == label
-            if label in pred:
-                cor = True
-            else:
-                cor = False
+            cor = pred == label
             print("是否答对：", cor)
             with open(logfile, 'a', encoding='utf8') as f:
                 f.write("是否答对："+str(cor)+"\n")
             cors.append(cor)
+            preds.append(pred+"|||"+label+"|||"+str(cor))
 
             #labels.append(label)
         except Exception as e:
             print(e)
-
-        '''if i>=5:
-            break # test'''
 
     acc = np.mean(cors)
 
     acc_info = "Average accuracy {:.3f} - {}".format(acc, subject)
     print(acc_info)
 
-    preds.append(acc_info)
-
+    preds.append(acc_info)    
     preds = [x+"\n" for x in preds]
 
     return preds
