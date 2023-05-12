@@ -103,8 +103,12 @@ def eval(args, subject, dev_df, test_df):
                 time.sleep(1)
                 pred = plain_chat(prompt)
                 pred = pred.replace("、", "").replace(".", "").replace(",", "").replace(";", "").replace("，", "")
-                # 识别答案pattern
-                pred = find_valid_substrings(pred)[0]
+                try:
+                    # 识别答案pattern
+                    pred = find_valid_substrings(pred)[0]
+                except Exception as e:
+                    print(e)
+                    pred = "未成功回答"
                 print("模型预测答案:", pred)
                 with open(logfile, 'a', encoding='utf8') as f:
                     f.write("模型预测答案:"+pred+"\n")
