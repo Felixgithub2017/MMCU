@@ -6,11 +6,11 @@ Please send us an email to apply for free dataset download: order@besteasy.com
 You may need to clarify your identity (Professor, College Students, NLP researcher/engineer, etc.)<br>
 For academic exchanges, please contact me at felix.zeng@besteasy.com
 
-# 重要声明
+## 重要声明
 
 本评测只是对大模型语义理解能力的测试，并不能代表模型的全面能力评测，评测结果仅供参考。整个评测方式、评测数据集、评测记录都公开，确保可以复现。
 
-# Updates
+## Updates
 2023.5.12<br>
 1.修正模型预测答案匹配方法，更好地抽取多选题预测答案<br>
 2.将某些题目正确答案中的 ＡＢＣＤ 修正为 A B C D<br>
@@ -22,7 +22,7 @@ ACD|||ABD|||False<br>
 BCD|||BCD|||True<br>
 
 
-# Usage
+## Usage
 
 --ntrain 0: do not provide examples<br>
 --ntrain 5: provide five examples<br>
@@ -91,7 +91,7 @@ python TestMOSS.py \
  --save_dir path_for_test_results
  ```
 
-# Cite
+## Cite
 If you find the code and testset are useful in your research, please consider citing
 
 @misc{zeng2023measuring,
