@@ -54,8 +54,6 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 | 生物  | 0.262     | 0.287       | 0.443      | 0.414     | 0.422         | 0.245     | 0.599    |
 | 平均  | 0.2465    | 0.274625    | 0.315375   | 0.31625   | 0.333         | 0.2525    | 0.454875 |
 
-![image](https://github.com/Felixgithub2017/MMCU/assets/26135691/93b608ac-e5fe-42d1-9b3c-97f8b21c0feb)
-
 
 ## Updates
 ### 2023.5.13<br>
