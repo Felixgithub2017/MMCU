@@ -1,0 +1,21 @@
+A|||C|||False
+A|||D|||False
+A|||D|||False
+B|||A|||False
+B|||C|||False
+A|||C|||False
+A|||D|||False
+A|||C|||False
+B|||D|||False
+B|||C|||False
+A|||D|||False
+D|||A|||False
+D|||D|||True
+A|||B|||False
+A|||A|||True
+D|||D|||True
+A|||D|||False
+A|||A|||True
+A|||A|||True
+B|||D|||False
+Average accuracy 0.250 - 医学影像学20题

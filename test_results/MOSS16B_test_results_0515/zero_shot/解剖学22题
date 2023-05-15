@@ -1,0 +1,23 @@
+A|||C|||False
+D|||C|||False
+A|||C|||False
+B|||A|||False
+A|||B|||False
+D|||D|||True
+B|||C|||False
+A|||C|||False
+A|||B|||False
+B|||D|||False
+B|||C|||False
+A|||D|||False
+B|||C|||False
+A|||B|||False
+B|||A|||False
+B|||C|||False
+A|||A|||True
+B|||A|||False
+B|||C|||False
+A|||A|||True
+D|||B|||False
+B|||A|||False
+Average accuracy 0.136 - 解剖学22题
