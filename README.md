@@ -10,7 +10,22 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 
 本评测只是对大模型语义理解能力的测试，并不能代表模型的全面能力评测，评测结果仅供参考。整个评测方式、评测数据集、评测记录都公开，确保可以复现。
 
+
+## 评测结果
+### 四大领域平均分数<br>
+![image](https://github.com/Felixgithub2017/MMCU/assets/26135691/c1a798ab-3102-4c3b-83e4-c0df3e517ea4)
+
+### 医疗领域分数<br>
+![image](https://github.com/Felixgithub2017/MMCU/assets/26135691/547a7901-c403-4406-8361-d04b189437d1)
+
+### 教育领域分数<br>
+![image](https://github.com/Felixgithub2017/MMCU/assets/26135691/93b608ac-e5fe-42d1-9b3c-97f8b21c0feb)
+
+
 ## Updates
+### 2023.5.13<br>
+2023.5.13至2023.5.15之间对所有模型进行了重新评测，结果均上传至 test_results 文件夹，公开可见。<br>
+
 ### 2023.5.13<br>
 2023.5.13之前拿到数据集的研究者需要手动添加以下问题的答案<br>
 心理学 306 题  缺失答案 答案应为  B<br>
