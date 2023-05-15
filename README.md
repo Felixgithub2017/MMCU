@@ -13,7 +13,7 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 
 ## 评测结果
 ### 四大领域平均分数<br>
-|       | zero-shot | bloomz_560m | bloomz_1b1 | bloomz_3b | bloomz_7b1_mt | ChatGLM 6B | MOSS 16B | GPT-3.5-turbo |
+| zero-shot | bloomz_560m | bloomz_1b1 | bloomz_3b | bloomz_7b1_mt | ChatGLM 6B | MOSS 16B | GPT-3.5-turbo |
 |-------|-----------|-------------|------------|-----------|---------------|------------|----------|---------------|
 | 医疗  | 0.298     | 0.213       | 0.374      | 0.364     | 0.338         | 0.234      | 0.512    | 
 | 法律  | 0.163     | 0.14        | 0.18       | 0.174     | 0.169         | 0.133      | 0.239    |
