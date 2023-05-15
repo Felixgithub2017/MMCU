@@ -91,6 +91,7 @@ def eval(args, subject, dev_df, test_df):
             label = test_df.iloc[i, test_df.shape[1]-1]
             # A B C D 特殊处理
             label = label.replace(" ", "").replace("Ａ", "A").replace("Ｂ", "B").replace("Ｃ", "C").replace("Ｄ", "D")
+            label = label.replace("\u3000", "").replace(",", "")
             print("正确答案:", label)
             with open(logfile, 'a', encoding='utf8') as f:
                 f.write("正确答案:"+label+"\n")
