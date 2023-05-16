@@ -1,6 +1,6 @@
 # MMCU
 
-This is the code repository for paper Measuring Massive Multitask Chinese Understanding https://arxiv.org/abs/2304.12986
+This is the code repository for paper Measuring Massive Multitask Chinese Understanding [https://arxiv.org/abs/2304.12986](https://arxiv.org/ftp/arxiv/papers/2304/2304.12986.pdf)
 
 Please send us an email to apply for free dataset download: order@besteasy.com
 You may need to clarify your identity (Professor, College Students, NLP researcher/engineer, etc.)<br>
