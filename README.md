@@ -56,7 +56,7 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 
 
 ## Updates
-### 2023.5.13<br>
+### 2023.5.15<br>
 2023.5.13至2023.5.15之间对所有模型进行了重新评测，结果均上传至 test_results 文件夹，公开可见。<br>
 
 ### 2023.5.13<br>
