@@ -151,12 +151,13 @@ python TestMOSS.py \
 
 ## Cite
 If you find the code and testset are useful in your research, please consider citing
-
+```
 @misc{zeng2023measuring,
-      title={Measuring Massive Multitask Chinese Understanding}, 
+      title={Measuring Massive Multitask Chinese Understanding},
       author={Hui Zeng},
       year={2023},
       eprint={2304.12986},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
+```
