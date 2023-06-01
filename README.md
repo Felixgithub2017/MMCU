@@ -163,3 +163,6 @@ If you find the code and testset are useful in your research, please consider ci
       primaryClass={cs.CL}
 }
 ```
+
+作者简介：
+LanguageX AI Lab 负责人// 中文大模型评测基准MMCU作者// WMT2022机器翻译通用赛道英中自动评测第一、中译英第三、英译日第三
