@@ -151,7 +151,7 @@ python TestMOSS.py \
  --save_dir path_for_test_results
  ```
 
-## Cite
+## Citation
 If you find the code and testset are useful in your research, please consider citing
 ```
 @misc{zeng2023measuring,
