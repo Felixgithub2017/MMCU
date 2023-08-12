@@ -14,7 +14,7 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 
 ## News
 ### 2023.8.11<br>
-中文大模型生成能力自动化评测基准CG-Eval发布（MMCU的姊妹篇，MMCU评测理解能力，CG-Eval评测生成能力），详见论文 https://arxiv.org/abs/2308.04823<br>
+中文大模型生成能力自动化评测基准CG-Eval发布（MMCU的姊妹篇，MMCU评测理解能力，CG-Eval评测生成能力），详见论文Evaluating the Generation Capabilities of Large Chinese Language Models https://arxiv.org/abs/2308.04823<br>
 CG-Eval测试数据集下载地址 https://huggingface.co/datasets/Besteasy/CG-Eval<br>
 CG-Eval自动化评测地址 http://cgeval.besteasy.com/<br>
 
