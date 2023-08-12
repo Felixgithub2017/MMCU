@@ -12,6 +12,11 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 本评测只是对大模型语义理解能力的测试，并不能代表模型的全面能力评测，评测结果仅供参考。整个评测方式、评测数据集、评测记录都公开，确保可以复现。<br>
 本测试集免费提供给大家是为了帮助各位研究者们评测自己的模型性能，并验证训练策略是否有效，并不是为了给出排行榜，中文大模型的改进任重道远，希望大家以正确的方式充分利用此数据集。<br>
 
+## News
+### 2023.8.11<br>
+中文大模型生成能力自动化评测基准CG-Eval发布（MMCU的姊妹篇，MMCU评测理解能力，CG-Eval评测生成能力），详见论文 https://arxiv.org/abs/2308.04823<br>
+CG-Eval测试数据集下载地址 https://huggingface.co/datasets/Besteasy/CG-Eval<br>
+CG-Eval自动化评测地址 http://cgeval.besteasy.com/<br>
 
 ## 评测结果（所有模型为2023年5月15日之前的版本）
 ### 四大领域平均分数<br>
@@ -58,10 +63,6 @@ For academic exchanges, please contact me at felix.zeng@besteasy.com
 
 
 ## Updates
-### 2023.8.11<br>
-中文大模型生成能力自动化评测基准CG-Eval发布（MMCU的姊妹篇，MMCU评测理解能力，CG-Eval评测生成能力），详见论文 https://arxiv.org/abs/2308.04823<br>
-CG-Eval测试数据集下载地址 https://huggingface.co/datasets/Besteasy/CG-Eval<br>
-CG-Eval自动化评测地址 http://cgeval.besteasy.com/<br>
 
 ### 2023.5.15<br>
 2023.5.13至2023.5.15之间对所有模型进行了重新评测，结果均上传至 test_results 文件夹，公开可见。<br>
