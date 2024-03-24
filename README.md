@@ -2,13 +2,15 @@
 
 This is the code repository for paper Measuring Massive Multitask Chinese Understanding [https://arxiv.org/abs/2304.12986](https://arxiv.org/ftp/arxiv/papers/2304/2304.12986.pdf)
 
-Please send us an email to apply for free dataset download: order@besteasy.com
+Please download the dataset at https://huggingface.co/datasets/Besteasy/MMCU, <br>
+or send us an email to apply for free dataset download: order@besteasy.com <br>
 You may need to clarify your identity (Professor, College Students, NLP researcher/engineer, etc.)<br>
 For academic exchanges, please contact me at felix.zeng@besteasy.com
 
 ## 重要声明
 
-数据集获取方式：发邮件至 order@besteasy.com 申请，注明身份及预期用途即可。<br>
+数据集获取方式：直接在 https://huggingface.co/datasets/Besteasy/MMCU 下载文件。<br>
+也可以发邮件至 order@besteasy.com 申请，注明身份及预期用途即可。<br>
 本评测只是对大模型语义理解能力的测试，并不能代表模型的全面能力评测，评测结果仅供参考。整个评测方式、评测数据集、评测记录都公开，确保可以复现。<br>
 本测试集免费提供给大家是为了帮助各位研究者们评测自己的模型性能，并验证训练策略是否有效，并不是为了给出排行榜，中文大模型的改进任重道远，希望大家以正确的方式充分利用此数据集。<br>
 
